@@ -21,12 +21,11 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "set \"PORT=%PORT%\" && react-scripts start",
-    "build": "set \"NODE_OPTIONS=--max_old_space_size=1024\" && react-scripts build",
+    "start": "set \"NODE_OPTIONS=--max_old_space_size=4096\" && set \"PORT=%PORT%\" && react-scripts start",
+    "build": "set \"NODE_OPTIONS=--max_old_space_size=8192\" && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  
   "eslintConfig": {
     "extends": [
       "react-app",
